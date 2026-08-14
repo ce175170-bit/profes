@@ -2,499 +2,755 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Plantel Docente | Colegio J.F.B.</title>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet"
-          href="estilos.css">
-          <link rel="stylesheet" href="main.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zona Profesores - Colegio Juan Francisco Bohórquez">
+    <title>Zona Profesores | Colegio J.F.B.</title>
+    <link rel="stylesheet" href="profesores.css">
+    <link rel="stylesheet" href="profesores.js">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
 
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
-
+<!-- == HEADER == -->
 <header class="header">
-
-    <div class="logo">
-
-        <div class="logo-icon">
-            <i class="fa-solid fa-graduation-cap"></i>
-        </div>
-
-        <div>
-
-            <h2>COLEGIO J.F.B.</h2>
-
-            <span>
-                JUAN FRANCISCO BOHÓRQUEZ
-            </span>
-
-        </div>
-
-    </div>
-
-
-    <nav>
-
-        <a href="#inicio">
-            Inicio
+    <div class="header-contenido">
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="logo-text">
+                <strong>
+                    COLEGIO J.F.B.
+                </strong>
+                <span>
+                    Juan Francisco Bohórquez
+                </span>
+            </div>
         </a>
 
-        <a href="#profesores">
-            Profesores
-        </a>
-
-        <a href="#areas">
-            Áreas
-        </a>
-
-        <a href="#compromiso">
-            Compromiso
-        </a>
-
-        <a href="index.html"
-           class="btn-inicio">
-
+        <!-- BOTÓN INICIO SIEMPRE VISIBLE -->
+        <a href="index.html" class="btn-inicio">
             <i class="fa-solid fa-house"></i>
-
-            Volver al inicio
-
+            <span>Volver a Inicio</span>
         </a>
 
-    </nav>
+        <!-- MENÚ -->
+        <nav class="nav" id="nav">
+            <a href="#equipo">Equipo</a>
+            <a href="#profesores">Profesores</a>
+            <a href="#valores">Valores</a>
+        </nav>
 
+        <!-- MENÚ CELULAR -->
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
 </header>
 
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<section class="hero"
-         id="inicio">
-
-    <div class="hero-decoration"></div>
-
-    <div class="hero-content">
-
-        <span class="mini-title">
-
-            <i class="fa-solid fa-circle"></i>
-
-            COMUNIDAD EDUCATIVA
-
-        </span>
-
-
-        <h1>
-
-            Nuestro
-
-            <strong>
-                Plantel Docente
-            </strong>
-
-        </h1>
-
-
+<!-- == NUESTRO EQUIPO EN NÚMEROS == -->
+<section class="equipo" id="equipo">
+    <div class="seccion-encabezado">
+        <span class="etiqueta">NUESTRA COMUNIDAD</span>
+        <h1>Nuestro equipo en números</h1>
         <p>
-
-            Conoce a los profesionales que acompañan
-            diariamente el aprendizaje y formación
-            de nuestros estudiantes.
-
+            Profesionales que trabajan cada día
+            por una educación de calidad.
         </p>
-
-
-        <a href="#profesores"
-           class="hero-btn">
-
-            CONOCER PROFESORES
-
-            <i class="fa-solid fa-arrow-down"></i>
-
-        </a>
-
     </div>
 
+    <div class="numeros">
+        <!-- DOCENTES -->
+        <div class="numero-card">
+            <div class="numero-icono">
+                <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <div class="numero-texto">
+                <strong>35+</strong>
+                <span>Docentes</span>
+            </div>
+        </div>
 
-    <div class="hero-number">
+        <!-- ÁREAS -->
+        <div class="numero-card">
+            <div class="numero-icono">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="numero-texto">
+                <strong>18</strong>
+                <span>Áreas académicas</span>
+            </div>
+        </div>
 
-        <span>
-            J.F.B.
-        </span>
+        <!-- AÑOS -->
+        <div class="numero-card">
+            <div class="numero-icono">
+                <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div class="numero-texto">
+                <strong>66</strong>
+                <span>Años de funcionamiento</span>
+            </div>
+        </div>
 
-        <small>
-
-            EDUCACIÓN<br>
-            VALORES<br>
-            FUTURO
-
-        </small>
-
+        <!-- COMPROMISO -->
+        <div class="numero-card">
+            <div class="numero-icono">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="numero-texto">
+                <strong>100%</strong>
+                <span>Compromiso educativo</span>
+            </div>
+        </div>
     </div>
-
 </section>
 
-
-
-<!-- =====================================================
-     PROFESORES
-===================================================== -->
-
+<!-- == NUESTROS PROFESORES == -->
 <section class="profesores"
          id="profesores">
-
-
-    <div class="section-heading">
-
-        <div>
-
-            <span>
-                CONOCE A NUESTROS DOCENTES
-            </span>
-
-            <h2>
-
-                Profesores que
-                <strong>inspiran</strong>
-
-            </h2>
-
-        </div>
-
-
+    <div class="seccion-encabezado">
+        <span class="etiqueta">
+            PLANTEL DOCENTE Y ADMINISTRATIVO
+        </span>
+        <h2>
+            Nuestros profesores
+        </h2>
         <p>
-
-            Desliza para conocer a cada integrante
-            de nuestro plantel docente.
-
+            Conoce a los profesionales que forman
+            parte de nuestra comunidad educativa.
         </p>
-
     </div>
 
-
-
-    <div class="carousel-wrapper">
-
-
-        <button class="arrow arrow-left"
-                id="prev">
-
+    <!-- CARRUSEL -->
+    <div class="carrusel">
+        <!-- FLECHA IZQUIERDA -->
+        <button class="flecha"
+                id="anterior"
+                aria-label="Profesor anterior">
             <i class="fa-solid fa-chevron-left"></i>
-
         </button>
 
+        <!-- VENTANA -->
+        <div class="carrusel-viewport"
+             id="viewport">
+            <div class="carrusel-track"
+                 id="track">
 
-
-        <div class="carousel"
-             id="carousel">
-
-
-            <!-- PROFESOR 1 -->
-
-            <article class="teacher">
-
-                <div class="teacher-photo">
-
-                    <img src="img/profesor1.jpg"
-                         alt="Profesor">
-
-                    <div class="photo-number">
-                        01
+                <!-- PROFESOR 1 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Director.png"
+                             alt="LIC. ALFREDO SUNAGUA">
+                        <div class="foto-borde"></div>
                     </div>
-
-                </div>
-
-
-                <div class="teacher-data">
-
-                    <span class="label">
-                        DOCENTE
-                    </span>
-
-
-                    <h3>
-                        Carlos Mendoza
-                    </h3>
-
-
-                    <div class="subject">
-
-                        <i class="fa-solid fa-book-open"></i>
-
-                        <div>
-
-                            <small>
-                                ASIGNATURA
-                            </small>
-
-                            <strong>
-                                Matemáticas
-                            </strong>
-
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            DIRECTOR
+                        </span>
+                        <h3>
+                            Lic. Alfredo Sunagua
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                67939481
+                            </span>
                         </div>
-
                     </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
 
-
-                    <div class="phone">
-
-                        <i class="fa-solid fa-phone"></i>
-
-                        <div>
-
-                            <small>
-                                TELÉFONO
-                            </small>
-
-                            <strong>
-                                70000000
-                            </strong>
-
+                <!-- Secretaria -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Secretaria.jpg"
+                             alt="Eva Elvira Meriles Huanca">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            SECRETARIA
+                        </span>
+                        <h3>
+                            Eva Elvira Meriles Huanca
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                72419723
+                            </span>
                         </div>
-
                     </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROFESORA 2 -->
-
-            <article class="teacher">
-
-                <div class="teacher-photo">
-
-                    <img src="img/profesora2.jpg"
-                         alt="Profesora">
-
-                    <div class="photo-number">
-                        02
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
+                </article>
 
-                </div>
-
-
-                <div class="teacher-data">
-
-                    <span class="label">
-                        DOCENTE
-                    </span>
-
-
-                    <h3>
-                        María López
-                    </h3>
-
-
-                    <div class="subject">
-
-                        <i class="fa-solid fa-book-open"></i>
-
-                        <div>
-
-                            <small>
-                                ASIGNATURA
-                            </small>
-
-                            <strong>
-                                Lenguaje y Literatura
-                            </strong>
-
+                <!-- Regente -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Regente.jpg"
+                             alt="Carla Valderrama Coronel">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            REGENTE
+                        </span>
+                        <h3>
+                            Carla Valderrama Coronel
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                65494222
+                            </span>
                         </div>
-
                     </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
 
-
-                    <div class="phone">
-
-                        <i class="fa-solid fa-phone"></i>
-
-                        <div>
-
-                            <small>
-                                TELÉFONO
-                            </small>
-
-                            <strong>
-                                71234567
-                            </strong>
-
+                <!-- PROFESOR 2 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe1.jpg"
+                             alt="Prof. Elio Juan Rivera Casasola">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            RELIGIÓN
+                        </span>
+                        <h3>
+                            Prof. Elio Juan Rivera Casasola
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                75138463
+                            </span>
                         </div>
-
                     </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROFESOR 3 -->
-
-            <article class="teacher">
-
-                <div class="teacher-photo">
-
-                    <img src="img/profesor3.jpg"
-                         alt="Profesor">
-
-                    <div class="photo-number">
-                        03
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
+                </article>
 
-                </div>
-
-
-                <div class="teacher-data">
-
-                    <span class="label">
-                        DOCENTE
-                    </span>
-
-
-                    <h3>
-                        Juan Pérez
-                    </h3>
-
-
-                    <div class="subject">
-
-                        <i class="fa-solid fa-book-open"></i>
-
-                        <div>
-
-                            <small>
-                                ASIGNATURA
-                            </small>
-
-                            <strong>
-                                Ciencias Sociales
-                            </strong>
-
+                <!-- PROFESOR 3 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe3.jpg"
+                             alt="Prof. Susana Moreira Apacani">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            FILOSOFÍA - PSICOLOGÍA
+                        </span>
+                        <h3>
+                            Prof. Susana Moreira Apacani
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                62691569
+                            </span>
                         </div>
-
                     </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
 
-
-                    <div class="phone">
-
-                        <i class="fa-solid fa-phone"></i>
-
-                        <div>
-
-                            <small>
-                                TELÉFONO
-                            </small>
-
-                            <strong>
-                                72345678
-                            </strong>
-
+                <!-- PROFESOR 4 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe4.jpg"
+                             alt="Prof. María Eugenia Pereira P.">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            LENGUAJE - COMUNICACIÓN
+                        </span>
+                        <h3>
+                            Prof. María Eugenia Pereira P.
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                77471007
+                            </span>
                         </div>
-
                     </div>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- PROFESORA 4 -->
-
-            <article class="teacher">
-
-                <div class="teacher-photo">
-
-                    <img src="img/profesora4.jpg"
-                         alt="Profesora">
-
-                    <div class="photo-number">
-                        04
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
+                </article>
 
-                </div>
-
-
-                <div class="teacher-data">
-
-                    <span class="label">
-                        DOCENTE
-                    </span>
-
-
-                    <h3>
-                        Ana Fernández
-                    </h3>
-
-
-                    <div class="subject">
-
-                        <i class="fa-solid fa-book-open"></i>
-
-                        <div>
-
-                            <small>
-                                ASIGNATURA
-                            </small>
-
-                            <strong>
-                                Ciencias Naturales
-                            </strong>
-
+                <!-- PROFESOR 5 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe5.jpg"
+                             alt="Prof. Rene Canaviri Coila">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            MATEMÁTICA
+                        </span>
+                        <h3>
+                            Prof. Rene Canaviri Coila
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                68697126
+                            </span>
                         </div>
-
                     </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
 
-
-                    <div class="phone">
-
-                        <i class="fa-solid fa-phone"></i>
-
-                        <div>
-
-                            <small>
-                                TELÉFONO
-                            </small>
-
-                            <strong>
-                                73456789
-                            </strong>
-
+                <!-- PROFESOR 6 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe6.jpg"
+                             alt="Prof. Judith Marisol Estrada Arriola">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            INGLES
+                        </span>
+                        <h3>
+                            Prof. Judith Marisol Estrada Arriola
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                75760635
+                            </span>
                         </div>
-
                     </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
 
-                </div>
+                <!-- PROFESOR 7 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe7.jpg"
+                             alt="Prof. Veronica Yesenia Villegas Rivas">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            SISTEMAS INFORMATICOS
+                        </span>
+                        <h3>
+                            Prof. Veronica Yesenia Villegas Rivas
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                67295969
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
 
-            </article>
+                <!-- PROFESOR 8 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe8.jpg"
+                             alt="Prof. Velsi Vasquez Zambrana">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            FILOSOFÍA - PSICOLOGÍA - MÚSICA
+                        </span>
+                        <h3>
+                            Prof. Velsi Vasquez Zambrana
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                78734033
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR 9 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe9.jpg"
+                             alt="Prof. Rosalba Muruchi Morales">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            CIENCIAS SOCIALES
+                        </span>
+                        <h3>
+                            Prof. Rosalba Muruchi Morales
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                69626406
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR 10 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe10.jpg"
+                             alt="Prof. Sergio Benito Viscarra">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            CIENCIAS SOCIALES
+                        </span>
+                        <h3>
+                            Prof. Sergio Benito Viscarra
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                68392488
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR 11 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe11.jpg"
+                             alt="Prof. Giovanna Andrea Ugarte Montaño">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            CIENCIAS SOCIALES
+                        </span>
+                        <h3>
+                            Prof. Giovanna Andrea Ugarte Montaño
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                72448869
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR 12 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe12.jpg"
+                             alt="Prof. Hortencia Vargas Reyes">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            LENGUAJE - COMUNICACIÓN
+                        </span>
+                        <h3>
+                            Prof. Hortencia Vargas Reyes
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                73893871
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR 13 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe13.jpg"
+                             alt="Prof. Sabina Mondocorre Olguin">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            BIOLOGÍA
+                        </span>
+                        <h3>
+                            Prof. Sabina Mondocorre Olguin
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                73400893
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR 14 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe14.jpg"
+                             alt="Prof. Ovidio A. Molina Miguez">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            MATEMÁTICA
+                        </span>
+                        <h3>
+                            Prof. Ovidio A. Molina Miguez
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                72390721
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR 15 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe15.png"
+                             alt="Prof. Cruziscaya Lourdes Fernandez Cardozo">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            CIENCIAS NATURALES
+                        </span>
+                        <h3>
+                            Prof. Cruziscaya Lourdes Fernandez Cardozo
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                72439657
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR 16 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe16.png"
+                             alt="Prof. Reynaldo Llanos Laime">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            EDUCACIÓN FÍSICA
+                        </span>
+                        <h3>
+                            Prof. Reynaldo Llanos Laime
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                72439657
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR 17 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe17.png"
+                             alt="Prof. Jhonny Acho Portillo">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            MÚSICA
+                        </span>
+                        <h3>
+                            Prof. Jhonny Acho Portillo
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                64358470
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR 18 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe18.png"
+                             alt="Prof. Mirian Soto">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            MÚSICA
+                        </span>
+                        <h3>
+                            Prof. Mirian Soto
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                72439657
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR 19 -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe19.png"
+                             alt="Prof. Arturo L. Mendez">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            CIENCIAS SOCIALES
+                        </span>
+                        <h3>
+                            Prof. Arturo L. Mendez
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                72442004
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+                <!-- PROFESOR  -->
+                <article class="profesor">
+                    <div class="profesor-foto">
+                        <img src="Imagenes/Profe20.png"
+                             alt="Prof. Jorge Alberto Peñaranda Llanos">
+                        <div class="foto-borde"></div>
+                    </div>
+                    <div class="profesor-datos">
+                        <span class="asignatura">
+                            ARTES PLÁSTICAS - T. TECNOLOGÍCAS GENERAL
+                        </span>
+                        <h3>
+                            Prof. Jorge Alberto Peñaranda Llanos
+                        </h3>
+                        <div class="telefono">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                68408891
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ver-perfil">
+                        Ver información
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </article>
+
+
+
+                
+
+
+            </div>
 
         </div>
 
 
 
-        <button class="arrow arrow-right"
-                id="next">
+        <!-- FLECHA DERECHA -->
+
+        <button class="flecha"
+                id="siguiente"
+                aria-label="Profesor siguiente">
 
             <i class="fa-solid fa-chevron-right"></i>
 
@@ -504,540 +760,208 @@
 
 
 
-    <div class="carousel-bottom">
+    <!-- INDICADORES -->
 
-        <div class="counter">
-
-            <strong id="current">
-                01
-            </strong>
-
-            <span>
-                / 04
-            </span>
-
-        </div>
-
-
-        <div class="line">
-
-            <span id="progress"></span>
-
-        </div>
-
-
-        <div class="dots"
-             id="dots">
-        </div>
-
-
-        <div class="swipe-text">
-
-            <i class="fa-solid fa-hand-pointer"></i>
-
-            Desliza
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     AREAS ACADÉMICAS
-===================================================== -->
-
-<section class="areas"
-         id="areas">
-
-
-    <div class="section-title">
-
-        <span>
-            FORMACIÓN ACADÉMICA
-        </span>
-
-
-        <h2>
-
-            Nuestras
-            <strong>áreas</strong>
-
-        </h2>
-
-
-        <p>
-
-            Diferentes áreas de conocimiento forman
-            parte de la educación integral de nuestros
-            estudiantes.
-
-        </p>
-
+    <div class="indicadores"
+         id="indicadores">
     </div>
 
 
+    <p class="ayuda-carrusel">
 
-    <div class="areas-grid">
+        <i class="fa-solid fa-hand-pointer"></i>
 
-
-        <div class="area-card">
-
-            <div class="area-icon">
-                <i class="fa-solid fa-calculator"></i>
-            </div>
-
-            <h3>
-                Matemáticas
-            </h3>
-
-            <p>
-                Desarrollo del razonamiento lógico,
-                pensamiento crítico y resolución
-                de problemas.
-            </p>
-
-        </div>
-
-
-
-        <div class="area-card">
-
-            <div class="area-icon">
-                <i class="fa-solid fa-book"></i>
-            </div>
-
-            <h3>
-                Lenguaje
-            </h3>
-
-            <p>
-                Comunicación, lectura, escritura
-                y expresión de ideas.
-            </p>
-
-        </div>
-
-
-
-        <div class="area-card">
-
-            <div class="area-icon">
-                <i class="fa-solid fa-flask"></i>
-            </div>
-
-            <h3>
-                Ciencias
-            </h3>
-
-            <p>
-                Investigación, experimentación
-                y comprensión del mundo natural.
-            </p>
-
-        </div>
-
-
-
-        <div class="area-card">
-
-            <div class="area-icon">
-                <i class="fa-solid fa-globe"></i>
-            </div>
-
-            <h3>
-                Ciencias Sociales
-            </h3>
-
-            <p>
-                Historia, sociedad, cultura y
-                formación ciudadana.
-            </p>
-
-        </div>
-
-
-
-        <div class="area-card">
-
-            <div class="area-icon">
-                <i class="fa-solid fa-palette"></i>
-            </div>
-
-            <h3>
-                Artes
-            </h3>
-
-            <p>
-                Creatividad, expresión artística
-                y desarrollo cultural.
-            </p>
-
-        </div>
-
-
-
-        <div class="area-card">
-
-            <div class="area-icon">
-                <i class="fa-solid fa-laptop-code"></i>
-            </div>
-
-            <h3>
-                Tecnología
-            </h3>
-
-            <p>
-                Innovación, herramientas digitales
-                y competencias tecnológicas.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     ESTADÍSTICAS
-===================================================== -->
-
-<section class="stats">
-
-    <div class="stats-content">
-
-
-        <div class="stat">
-
-            <i class="fa-solid fa-chalkboard-user"></i>
-
-            <strong>
-                20+
-            </strong>
-
-            <span>
-                Docentes
-            </span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <i class="fa-solid fa-book-open"></i>
-
-            <strong>
-                10+
-            </strong>
-
-            <span>
-                Áreas académicas
-            </span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <i class="fa-solid fa-users"></i>
-
-            <strong>
-                500+
-            </strong>
-
-            <span>
-                Estudiantes
-            </span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <i class="fa-solid fa-award"></i>
-
-            <strong>
-                100%
-            </strong>
-
-            <span>
-                Compromiso
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     COMPROMISO
-===================================================== -->
-
-<section class="commitment"
-         id="compromiso">
-
-
-    <div class="commitment-content">
-
-        <span>
-            NUESTRO COMPROMISO
-        </span>
-
-
-        <h2>
-
-            Educación que
-            <strong>transforma</strong>
-
-        </h2>
-
-
-        <p>
-
-            Nuestro plantel docente trabaja con
-            compromiso, responsabilidad y vocación
-            para contribuir a la formación integral
-            de cada estudiante.
-
-        </p>
-
-
-        <div class="values">
-
-
-            <div>
-                <i class="fa-solid fa-heart"></i>
-                Vocación
-            </div>
-
-
-            <div>
-                <i class="fa-solid fa-lightbulb"></i>
-                Innovación
-            </div>
-
-
-            <div>
-                <i class="fa-solid fa-star"></i>
-                Excelencia
-            </div>
-
-
-            <div>
-                <i class="fa-solid fa-handshake"></i>
-                Compromiso
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     MENSAJE
-===================================================== -->
-
-<section class="teacher-message">
-
-
-    <div class="message-box">
-
-
-        <div class="quote-icon">
-
-            <i class="fa-solid fa-quote-left"></i>
-
-        </div>
-
-
-        <span>
-            MENSAJE DEL PLANTEL DOCENTE
-        </span>
-
-
-        <h2>
-
-            "Cada estudiante tiene
-            <strong>un potencial único.</strong>"
-
-        </h2>
-
-
-        <p>
-
-            Nuestro compromiso es acompañar a cada
-            estudiante en su camino de aprendizaje,
-            motivándolo a descubrir sus capacidades
-            y construir un futuro lleno de oportunidades.
-
-        </p>
-
-
-        <div class="message-line"></div>
-
-
-        <small>
-            PLANTEL DOCENTE — COLEGIO J.F.B.
-        </small>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     NUESTRA LABOR
-===================================================== -->
-
-<section class="labor">
-
-
-    <div class="labor-image">
-
-        <img src="img/docentes.jpg"
-             alt="Plantel docente">
-
-    </div>
-
-
-    <div class="labor-content">
-
-        <span>
-            NUESTRA LABOR
-        </span>
-
-
-        <h2>
-
-            Enseñar es también
-            <strong>inspirar.</strong>
-
-        </h2>
-
-
-        <p>
-
-            Los docentes del Colegio J.F.B. cumplen
-            una importante misión dentro de nuestra
-            comunidad educativa.
-
-        </p>
-
-
-        <div class="labor-items">
-
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                Formación integral
-
-            </div>
-
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                Acompañamiento educativo
-
-            </div>
-
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                Innovación pedagógica
-
-            </div>
-
-
-            <div>
-
-                <i class="fa-solid fa-check"></i>
-
-                Educación en valores
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-
-    <div class="footer-logo">
-
-
-        <div>
-
-            <i class="fa-solid fa-graduation-cap"></i>
-
-        </div>
-
-
-        <section>
-
-            <strong>
-                COLEGIO J.F.B.
-            </strong>
-
-            <span>
-                JUAN FRANCISCO BOHÓRQUEZ
-            </span>
-
-        </section>
-
-
-    </div>
-
-
-    <p>
-
-        Formando estudiantes con valores,
-        conocimientos y visión de futuro.
+        En computadora utiliza las flechas.
+        En celular desliza con el dedo.
 
     </p>
 
+</section>
 
-    <div class="footer-bottom">
+<!-- == PORTADA PRINCIPAL == -->
+<section class="portada">
+    <div class="portada-contenido">
 
-        © 2026 Colegio J.F.B.
-        — Plantel Docente
+        <!-- TEXTO -->
+        <div class="portada-texto">
+            <span class="portada-etiqueta">
+                COLEGIO JUAN FRANCISCO BOHÓRQUEZ
+            </span>
+            <h2>
+                Educando con vocación,
+                formando para el futuro.
+            </h2>
+            <p>
+                Nuestro plantel docente trabaja con
+                dedicación, conocimiento y valores para
+                acompañar a nuestros estudiantes en
+                cada etapa de su formación.
+            </p>
+            <a href="#valores" class="portada-btn">
+                Conoce nuestros valores
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
 
+        <!-- FOTO -->
+        <div class="portada-foto">
+            <div class="portada-marco">
+                <img src="Imagenes/portada profes.png" alt="Plantel docente del Colegio Juan Francisco Bohórquez">
+            </div>
+            <div class="decoracion decoracion-1"></div>
+            <div class="decoracion decoracion-2"></div>
+        </div>
+    </div>
+</section>
+
+<!-- == VALORES == -->
+<section class="valores" id="valores">
+    <div class="seccion-encabezado">
+        <span class="etiqueta">NUESTRO COMPROMISO</span>
+        <h2>Valores de nuestros profesores</h2>
+        <p>
+            Principios que orientan nuestra labor
+            educativa y nuestra convivencia.
+        </p>
     </div>
 
+    <div class="valores-grid">
+        <article class="valor">
+            <div class="valor-icono">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Vocación</h3>
+            <p>
+                Enseñamos con pasión y dedicación,
+                buscando el desarrollo integral
+                de nuestros estudiantes.
+            </p>
+        </article>
+
+        <article class="valor">
+            <div class="valor-icono">
+                <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3>Respeto</h3>
+            <p>
+                Construimos relaciones basadas
+                en el respeto, el diálogo y
+                la convivencia.
+            </p>
+        </article>
+
+        <article class="valor">
+            <div class="valor-icono">
+                <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3>Compromiso</h3>
+            <p>
+                Trabajamos responsablemente por
+                una educación de calidad.
+            </p>
+        </article>
+
+        <article class="valor">
+            <div class="valor-icono">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h3>Ética</h3>
+            <p>
+                Actuamos con honestidad,
+                responsabilidad y profesionalismo.
+            </p>
+        </article>
+
+        <article class="valor">
+            <div class="valor-icono">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3>Innovación</h3>
+            <p>
+                Incorporamos nuevas ideas y
+                estrategias para mejorar
+                el aprendizaje.
+            </p>
+        </article>
+        
+        <article class="valor">
+            <div class="valor-icono">
+                <i class="fa-solid fa-user-check"></i>
+            </div>
+            <h3>Responsabilidad</h3>
+            <p>
+                Cumplimos nuestra labor con
+                dedicación y responsabilidad.
+            </p>
+        </article>
+    </div>
+</section>
+
+<!-- == FRASE FINAL == -->
+<section class="frase">
+    <i class="fa-solid fa-quote-left"></i>
+    <h2>
+        Una buena educación comienza
+        con docentes comprometidos.
+    </h2>
+    <p>Plantel Docente · Colegio J.F.B.</p>
+</section>
+
+<!-- == FOOTER == -->
+<footer>
+    <div class="footer-contenido">
+        <div class="footer-marca">
+            <div class="footer-icono">
+                <i class="fa-solid fa-school"></i>
+            </div>
+            <div>
+                <strong>
+                    COLEGIO J.F.B.
+                </strong>
+                <span>
+                    Juan Francisco Bohórquez
+                </span>
+            </div>
+        </div>
+
+        <div class="footer-enlaces">
+            <a href="#equipo">Equipo</a>
+            <a href="#profesores">Profesores</a>
+            <a href="#valores">Valores</a>
+            <a href="index.html">Inicio</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 Colegio Juan Francisco Bohórquez</span>
+        <span>Zona Profesores</span>
+    </div>
 </footer>
 
+<!-- == MODAL PROFESOR == -->
+<div class="modal" id="modal">
+    <div class="modal-contenido">
+        <button class="modal-cerrar" id="cerrarModal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-foto">
+            <img id="modalImagen" src="" alt="">
+        </div>
+        <div class="modal-info">
+            <span id="modalAsignatura"></span>
+            <h2 id="modalNombre"></h2>
+            <div class="modal-telefono">
+                <i class="fa-solid fa-phone"></i>
+                <span id="modalTelefono"></span>
+            </div>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+</div>
 
-
-<!-- JavaScript -->
-
-<script src="main.js"></script>
+<script src="profesores.js"></script>
 
 </body>
 </html>
