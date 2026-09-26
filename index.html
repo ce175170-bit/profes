@@ -6,6 +6,7 @@
     <meta name="description" content="Zona Profesores - Colegio Juan Francisco Bohórquez"/>
     <title>Zona Profesores | Colegio J.F.B.</title>    
     <link rel="icon" type="image/png" href="imagenes/Escudo transparente.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" href="profesores.css"/>    
   </head>
@@ -47,63 +48,67 @@
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
-    </header>
+    </header>    
 
-    <!-- == NUESTRO EQUIPO EN NÚMEROS == -->
-    <section class="equipo" id="equipo">
-      <div class="seccion-encabezado">
-        <span class="etiqueta">NUESTRA COMUNIDAD</span>
-        <h1>Nuestro equipo en números</h1>
-        <p>Profesionales que trabajan cada día por una educación de calidad.</p>
+  
+<!-- == BIENVENIDA ZONA MAESTROS == -->
+<section class="bienvenida-maestros" id="inicio">
+
+  <div class="bienvenida-fondo">
+    <div class="bienvenida-overlay"></div>
+  </div>
+
+  <div class="bienvenida-contenido">
+
+    <div class="bienvenida-texto">
+
+      <span class="bienvenida-etiqueta">
+        COLEGIO JUAN FRANCISCO BOHÓRQUEZ
+      </span>
+
+      <h1>
+        Bienvenidos 
+        <span>Zona Maestros</span>
+      </h1>
+
+      <p>
+        Un espacio dedicado a conocer a los profesionales
+        que forman parte de nuestra comunidad educativa,
+        comprometidos con la enseñanza, la formación y el
+        futuro de nuestros estudiantes.
+      </p>
+
+      <a href="#profesores" class="bienvenida-boton">
+        Conocer a nuestros profesores
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+
+    </div>
+
+    <div class="bienvenida-decoracion">
+
+      <div class="bienvenida-circulo"></div>
+
+      <div class="bienvenida-icono">
+        <img src="Imagenes/Escudo transparente.png" alt="">
       </div>
 
-      <div class="numeros">
+      <span>
+        VOCACIÓN · COMPROMISO · EDUCACIÓN
+      </span>
 
-        <!-- DOCENTES -->
-        <div class="numero-card">
-          <div class="numero-icono">
-            <i class="fa-solid fa-chalkboard-user"></i>
-          </div>
-          <div class="numero-texto">
-            <strong>35+</strong>
-            <span>Docentes</span>
-          </div>
-        </div>
+    </div>
 
-        <!-- ÁREAS -->
-        <div class="numero-card">
-          <div class="numero-icono">
-            <i class="fa-solid fa-book-open"></i>
-          </div>
-          <div class="numero-texto">
-            <strong>18</strong>
-            <span>Áreas académicas</span>
-          </div>
-        </div>
+  </div>
 
-        <!-- AÑOS -->
-        <div class="numero-card">
-          <div class="numero-icono">
-            <i class="fa-solid fa-building-columns"></i>
-          </div>
-          <div class="numero-texto">
-            <strong>66</strong>
-            <span>Años de funcionamiento</span>
-          </div>
-        </div>
+  <div class="bienvenida-scroll">
+    <span>DESLIZA PARA CONTINUAR</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </div>
 
-        <!-- COMPROMISO -->
-        <div class="numero-card">
-          <div class="numero-icono">
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          <div class="numero-texto">
-            <strong>100%</strong>
-            <span>Compromiso educativo</span>
-          </div>
-        </div>
-      </div>
-    </section>
+</section>
+
+
 
     <!-- == NUESTROS PROFESORES == -->
     <section class="profesores" id="profesores">
@@ -129,7 +134,7 @@
             <!-- PROFESOR 1 -->
             <article class="profesor">
               <div class="profesor-foto">
-                <img src="Imagenes/Director.png" alt="LIC. ALFREDO SUNAGUA" />
+                <img src="Imagenes/Director.webp" alt="LIC. ALFREDO SUNAGUA" />
                 <div class="foto-borde"></div>
               </div>
               <div class="profesor-datos">
@@ -150,7 +155,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Secretaria.jpg"
+                  src="Imagenes/Secretaria.webp"
                   alt="Eva Elvira Meriles Huanca"
                 />
                 <div class="foto-borde"></div>
@@ -173,7 +178,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Regente.jpg"
+                  src="Imagenes/Regente.webp"
                   alt="Carla Valderrama Coronel"
                 />
                 <div class="foto-borde"></div>
@@ -192,11 +197,34 @@
               </div>
             </article>
 
+            <!-- Portera -->
+            <article class="profesor">
+              <div class="profesor-foto">
+                <img
+                  src="Imagenes/Portera.webp"
+                  alt="Juana Chicchi"
+                />
+                <div class="foto-borde"></div>
+              </div>
+              <div class="profesor-datos">
+                <span class="asignatura"> PORTERA </span>
+                <h3>Juana Chicchi</h3>
+                <div class="telefono">
+                  <i class="fa-solid fa-phone"></i>
+                  <span> 65494222 </span>
+                </div>
+              </div>
+              <div class="ver-perfil">
+                Ver información
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </article>
+
             <!-- PROFESOR 2 -->
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe1.jpg"
+                  src="Imagenes/Profe1.webp"
                   alt="Prof. Elio Juan Rivera Casasola"
                 />
                 <div class="foto-borde"></div>
@@ -219,7 +247,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe3.jpg"
+                  src="Imagenes/Profe3.webp"
                   alt="Prof. Susana Moreira Apacani"
                 />
                 <div class="foto-borde"></div>
@@ -242,7 +270,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe4.jpg"
+                  src="Imagenes/Profe4.webp"
                   alt="Prof. María Eugenia Pereira P."
                 />
                 <div class="foto-borde"></div>
@@ -265,7 +293,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe5.jpg"
+                  src="Imagenes/Profe5.webp"
                   alt="Prof. Rene Canaviri Coila"
                 />
                 <div class="foto-borde"></div>
@@ -288,7 +316,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe6.jpg"
+                  src="Imagenes/Profe6.webp"
                   alt="Prof. Judith Marisol Estrada Arriola"
                 />
                 <div class="foto-borde"></div>
@@ -311,7 +339,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe7.jpg"
+                  src="Imagenes/Profe7.webp"
                   alt="Prof. Veronica Yesenia Villegas Rivas"
                 />
                 <div class="foto-borde"></div>
@@ -334,7 +362,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe8.jpg"
+                  src="Imagenes/Profe8.webp"
                   alt="Prof. Velsi Vasquez Zambrana"
                 />
 
@@ -366,7 +394,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe9.jpg"
+                  src="Imagenes/Profe9.webp"
                   alt="Prof. Rosalba Muruchi Morales"
                 />
 
@@ -396,7 +424,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe10.jpg"
+                  src="Imagenes/Profe10.webp"
                   alt="Prof. Sergio Benito Viscarra"
                 />
 
@@ -426,7 +454,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe11.jpg"
+                  src="Imagenes/Profe11.webp"
                   alt="Prof. Giovanna Andrea Ugarte Montaño"
                 />
 
@@ -456,7 +484,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe12.jpg"
+                  src="Imagenes/Profe12.webp"
                   alt="Prof. Hortencia Vargas Reyes"
                 />
 
@@ -486,7 +514,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe13.jpg"
+                  src="Imagenes/Profe13.webp"
                   alt="Prof. Sabina Mondocorre Olguin"
                 />
 
@@ -516,7 +544,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe14.jpg"
+                  src="Imagenes/Profe14.webp"
                   alt="Prof. Ovidio A. Molina Miguez"
                 />
 
@@ -546,7 +574,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe15.png"
+                  src="Imagenes/Profe15.webp"
                   alt="Prof. Cruziscaya Lourdes Fernandez Cardozo"
                 />
 
@@ -576,7 +604,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe16.png"
+                  src="Imagenes/Profe16.webp"
                   alt="Prof. Reynaldo Llanos Laime"
                 />
 
@@ -591,7 +619,7 @@
                 <div class="telefono">
                   <i class="fa-solid fa-phone"></i>
 
-                  <span> 72439657 </span>
+                  <span> 68394166 </span>
                 </div>
               </div>
 
@@ -606,7 +634,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe17.png"
+                  src="Imagenes/Profe17.webp"
                   alt="Prof. Jhonny Acho Portillo"
                 />
 
@@ -635,20 +663,20 @@
             <!-- PROFESOR 18 -->
             <article class="profesor">
               <div class="profesor-foto">
-                <img src="Imagenes/Profe18.png" alt="Prof. Mirian Soto" />
+                <img src="Imagenes/Profe18.webp" alt="Prof. Mirian Soto" />
 
                 <div class="foto-borde"></div>
               </div>
 
               <div class="profesor-datos">
-                <span class="asignatura"> MÚSICA </span>
+                <span class="asignatura"> Biología </span>
 
                 <h3>Prof. Mirian Soto</h3>
 
                 <div class="telefono">
                   <i class="fa-solid fa-phone"></i>
 
-                  <span> 72439657 </span>
+                  <span> 72391354 </span>
                 </div>
               </div>
 
@@ -662,7 +690,7 @@
             <!-- PROFESOR 19 -->
             <article class="profesor">
               <div class="profesor-foto">
-                <img src="Imagenes/Profe19.png" alt="Prof. Arturo L. Mendez" />
+                <img src="Imagenes/Profe19.webp" alt="Prof. Arturo L. Mendez" />
 
                 <div class="foto-borde"></div>
               </div>
@@ -690,7 +718,7 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe20.png"
+                  src="Imagenes/Profe20.webp"
                   alt="Prof. Jorge Alberto Peñaranda Llanos"/>
 
                 <div class="foto-borde"></div>
@@ -721,8 +749,8 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe21.jpeg"
-                  alt="Prof. Jorge Alberto Peñaranda Llanos"
+                  src="Imagenes/Profe21.webp"
+                  alt="Prof. Helen Varinia Mamani Zambrana"
                 />
 
                 <div class="foto-borde"></div>
@@ -730,15 +758,15 @@
 
               <div class="profesor-datos">
                 <span class="asignatura">
-                  ARTES PLÁSTICAS - T. TECNOLOGÍCAS GENERAL
+                  QUIMICA
                 </span>
 
-                <h3>Prof. Jorge Alberto Peñaranda Llanos</h3>
+                <h3>Prof. Helen Varinia Mamani Zambrana</h3>
 
                 <div class="telefono">
                   <i class="fa-solid fa-phone"></i>
 
-                  <span> 68408891 </span>
+                  <span> 72414212 </span>
                 </div>
               </div>
 
@@ -753,8 +781,8 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe22.jpeg"
-                  alt="Prof. Jorge Alberto Peñaranda Llanos"
+                  src="Imagenes/Profe22.webp"
+                  alt="Prof. Marina Ckacka Quispe"
                 />
 
                 <div class="foto-borde"></div>
@@ -762,15 +790,15 @@
 
               <div class="profesor-datos">
                 <span class="asignatura">
-                  ARTES PLÁSTICAS - T. TECNOLOGÍCAS GENERAL
+                  INGLES
                 </span>
 
-                <h3>Prof. Jorge Alberto Peñaranda Llanos</h3>
+                <h3>Prof. Marina Ckacka Quispe</h3>
 
                 <div class="telefono">
                   <i class="fa-solid fa-phone"></i>
 
-                  <span> 68408891 </span>
+                  <span> 68630546 </span>
                 </div>
               </div>
 
@@ -785,8 +813,8 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe23.jpeg"
-                  alt="Prof. Jorge Alberto Peñaranda Llanos"
+                  src="Imagenes/Profe23.webp"
+                  alt="Prof. Dora Paco Paco"
                 />
 
                 <div class="foto-borde"></div>
@@ -794,15 +822,15 @@
 
               <div class="profesor-datos">
                 <span class="asignatura">
-                  ARTES PLÁSTICAS - T. TECNOLOGÍCAS GENERAL
+                 FISICA
                 </span>
 
-                <h3>Prof. Jorge Alberto Peñaranda Llanos</h3>
+                <h3>Prof. Dora Paco Paco</h3>
 
                 <div class="telefono">
                   <i class="fa-solid fa-phone"></i>
 
-                  <span> 68408891 </span>
+                  <span> 72445170</span>
                 </div>
               </div>
 
@@ -817,8 +845,8 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe24.jpeg"
-                  alt="Prof. Jorge Alberto Peñaranda Llanos"
+                  src="Imagenes/Profe24.webp"
+                  alt="Prof. Fidel Paz Mamani"
                 />
 
                 <div class="foto-borde"></div>
@@ -826,15 +854,15 @@
 
               <div class="profesor-datos">
                 <span class="asignatura">
-                  ARTES PLÁSTICAS - T. TECNOLOGÍCAS GENERAL
+                 MATEMATICAS
                 </span>
 
-                <h3>Prof. Jorge Alberto Peñaranda Llanos</h3>
+                <h3>Prof.  Fidel Paz Mamani</h3>
 
                 <div class="telefono">
                   <i class="fa-solid fa-phone"></i>
 
-                  <span> 68408891 </span>
+                  <span>72418625 </span>
                 </div>
               </div>
 
@@ -849,8 +877,8 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe25.jpeg"
-                  alt="Prof. Jorge Alberto Peñaranda Llanos"
+                  src="Imagenes/Profe25.webp"
+                  alt="Prof. Maria Isabel Saavedra Blázquez"
                 />
 
                 <div class="foto-borde"></div>
@@ -858,15 +886,15 @@
 
               <div class="profesor-datos">
                 <span class="asignatura">
-                  ARTES PLÁSTICAS - T. TECNOLOGÍCAS GENERAL
+                    TECNICA TECNOLOGIA
                 </span>
 
-                <h3>Prof. Jorge Alberto Peñaranda Llanos</h3>
+                <h3>Prof. Maria Isabel Saavedra Blázquez</h3>
 
                 <div class="telefono">
                   <i class="fa-solid fa-phone"></i>
 
-                  <span> 68408891 </span>
+                  <span> 74224542 </span>
                 </div>
               </div>
 
@@ -881,8 +909,8 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe26.jpeg"
-                  alt="Prof. Jorge Alberto Peñaranda Llanos"
+                  src="Imagenes/Profe26.webp"
+                  alt="Prof. Maria Ximena Martinez Cruz"
                 />
 
                 <div class="foto-borde"></div>
@@ -890,15 +918,15 @@
 
               <div class="profesor-datos">
                 <span class="asignatura">
-                  ARTES PLÁSTICAS - T. TECNOLOGÍCAS GENERAL
+                  VALORES ESPIRITUALES Y RELIGION
                 </span>
 
-                <h3>Prof. Jorge Alberto Peñaranda Llanos</h3>
+                <h3>Prof.  Maria Ximena Martinez Cruz </h3>
 
                 <div class="telefono">
                   <i class="fa-solid fa-phone"></i>
 
-                  <span> 68408891 </span>
+                  <span> 72429542 </span>
                 </div>
               </div>
 
@@ -913,8 +941,8 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe27.jpeg"
-                  alt="Prof. Jorge Alberto Peñaranda Llanos"
+                  src="Imagenes/Profe27.webp"
+                  alt="Prof. Gloria Salazar M."
                 />
 
                 <div class="foto-borde"></div>
@@ -922,15 +950,15 @@
 
               <div class="profesor-datos">
                 <span class="asignatura">
-                  ARTES PLÁSTICAS - T. TECNOLOGÍCAS GENERAL
+                  COMUNICACION Y LENGUAJE
                 </span>
 
-                <h3>Prof. Jorge Alberto Peñaranda Llanos</h3>
+                <h3>Prof. Gloria Salazar M.</h3>
 
                 <div class="telefono">
                   <i class="fa-solid fa-phone"></i>
 
-                  <span> 68408891 </span>
+                  <span> 73861590 </span>
                 </div>
               </div>
 
@@ -945,23 +973,23 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe28.png"
-                  alt="Prof. Jorge Alberto Peñaranda Llanos"/>
+                  src="Imagenes/Profe28.webp"
+                  alt="Prof. Danitza Mayra López Condori"/>
 
                 <div class="foto-borde"></div>
               </div>
 
               <div class="profesor-datos">
                 <span class="asignatura">
-                  ARTES PLÁSTICAS - T. TECNOLOGÍCAS GENERAL
+                 SISTEMAS INFORMATICOS
                 </span>
 
-                <h3>Prof. Jorge Alberto Peñaranda Llanos</h3>
+                <h3>Prof.  Danitza Mayra López Condori</h3>
 
                 <div class="telefono">
                   <i class="fa-solid fa-phone"></i>
 
-                  <span> 68408891 </span>
+                  <span> 72429278 </span>
                 </div>
               </div>
 
@@ -976,23 +1004,54 @@
             <article class="profesor">
               <div class="profesor-foto">
                 <img
-                  src="Imagenes/Profe29.jpeg"
-                  alt="Prof. Jorge Alberto Peñaranda Llanos"/>
+                  src="Imagenes/Profe29.webp"
+                  alt="Prof. Jhasmani Checa Flores"/>
 
                 <div class="foto-borde"></div>
               </div>
 
               <div class="profesor-datos">
                 <span class="asignatura">
-                  ARTES PLÁSTICAS - T. TECNOLOGÍCAS GENERAL
+                  EDUCACION FISICA
                 </span>
 
-                <h3>Prof. Jorge Alberto Peñaranda Llanos</h3>
+                <h3>Prof. Jhasmani Checa Flores</h3>
 
                 <div class="telefono">
                   <i class="fa-solid fa-phone"></i>
 
-                  <span> 68408891 </span>
+                  <span> 63704947 </span>
+                </div>
+              </div>
+
+              <div class="ver-perfil">
+                Ver información
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </article>
+
+            <!-- PROFESOR 30 -->
+            <article class="profesor">
+              <div class="profesor-foto">
+                <img
+                  src="Imagenes/Profe30.webp"
+                  alt="Prof. Juana Filamita Tejerina"/>
+
+                <div class="foto-borde"></div>
+              </div>
+
+              <div class="profesor-datos">
+                <span class="asignatura">
+                  MATEMÁTICAS
+                </span>
+
+                <h3>Prof. Juana Filamita Tejerina</h3>
+
+                <div class="telefono">
+                  <i class="fa-solid fa-phone"></i>
+
+                  <span>69633736</span>
                 </div>
               </div>
 
@@ -1046,7 +1105,7 @@
         <div class="portada-foto">
           <div class="portada-marco">
             <img
-              src="Imagenes/portada profes.png"
+              src="Imagenes/portada profes.webp"
               alt="Plantel docente del Colegio Juan Francisco Bohórquez"/>
           </div>
           <div class="decoracion decoracion-1"></div>
